@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <title>Caso_SV</title>
+</head>
+<body id="screen">
+    <section class="caja-principal">
+        <section class="caja-izq">
+            <article class="buscador-article">
+                <p>Producto</p>
+                <div id= "caja-buscador">
+                    <!--<input id="buscador" type="text" placeholder="Buscar por código de barra o nombre del producto" >-->
+                  <select name="" id="buscador">
+                      <option value="0">Seleccione un Producto</option>
+                      <option id="1" value="1">Leche Evaporada Entera Pack x6 Un Lata 410 Gr</option>
+                      <option id="2" value="2">Leche Chocolatada Tetra Pack 1 Lt</option>
+                      <option id="3" value="3">Leche Fresca 0% Lectosa Tetra Pack 1 Lt</option>
+                    </select>
+                </div>
+                <button onclick=" agregarProducto()" id="add">Agregar</button>
+            </article>
+            <article class="lista">
+                <table id="tabla-productos"> <!--este es adonde insertar-->
+                    <thead class="caja-tabla-productos">
+                        <tr class="izq">
+                            <th>ITEM</th>
+                            <th>CANT.</th>
+                            <th>PRODUCTO</th>
+                        </tr>
+                        <tr class="der">
+                            <th>MARCA</th>
+                            <th>PRECIO</th>
+                            <th>IMPORTE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-contenido">
+                        <tr class="caja-productos-add">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--<div class="superior">
+                    <div class="p-izq">
+                        <p>ITEM</p>
+                        <p>CANT.</p>
+                        <p>PRODUCTO</p>
+                    </div>
+                    <div class="p-der">
+                        <p>MARCA</p>
+                        <p>PRECIO</p>
+                        <p>IMPORTE</p>
+                    </div>
+                </div>-->
+
+            </article>
+        </section>
+        <section class="caja-der">
+            <div id="total">S/. 21.60</div>
+            <div id="documento" class="small">
+                <p>DOCUMENTO</p>
+                <select id="select-documento">
+                    <option value="0">FACTURA</option>
+                </select>
+            </div>
+            <div id="tipopago" class="small">
+                <p>TIPO PAGO</p>
+                <select id="select-tipopago">
+                    <option value="0">CONTADO</option>
+                </select>
+            </div>
+            <div id="serie" class="small"> 
+                <p>SERIE</p>
+                <input id="caja-serie" type="text" placeholder="001">
+            </div>
+            <div id="ndeventa" class="small">
+                <p>N° DE VENTA</p>
+                <input id="caja-ndeventa" type="text" placeholder="000001">
+            </div>
+            <div id="fdecompra" class="large">
+                <p>FECHA DE COMPRA</p>
+                <input id="caja-fdecompra" type="date">
+            </div>
+            <div id="proveedor" class="large">
+                <p>PROVEEDOR</p>
+                <input id="caja-proveedor" type="text" placeholder="RUC o Razón Social">
+            </div>
+            <div id="otros" class="distinto">
+                <p>SUB TOTAL</p>
+                <p>I.G.V</p>
+                <p>TOTAL</p>
+            </div>
+        </section>
+    </section>
+    <script src="JS/ventas.js"></script>
+</body>
+</html>

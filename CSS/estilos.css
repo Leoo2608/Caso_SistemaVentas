@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 650px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.caja-principal{
+    width: 1300px;
+    height: 700px;
+    border: rgb(204, 204, 204) 2px solid;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    margin: auto;
+}
+.caja-der{
+    height: 650px;
+    width: 480px;
+    background: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.caja-izq{
+    height: 600px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.buscador-article{
+    margin-top: 20px;
+    width: 800px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#caja-buscador{
+    width: 600px;
+    height: 30px;
+    display: flex;
+}
+#add{
+    width: 100px;
+    font-weight: bold;
+    border: rgb(30, 231, 231) 1px solid;
+    background: rgba(255, 255, 255, 0.835);
+}
+.buscador-article #buscador{
+    width: 700px;
+    padding-left: 10px;
+    border: rgb(30, 231, 231) 1px solid;
+}
+.buscador-article p{
+    padding-left: 8px;
+    padding-top: 2px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.lista{
+    margin-top: 20px;
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    display: flex;
+}
+/*---tablas---*/
+#tabla-productos{
+    width: 800px;
+    height: 50px;
+}
+#tabla-contenido{
+    width: 800px;
+    height: 50px;
+}
+.caja-tabla-productos{
+    width: 800px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px rgb(28, 226, 226) solid;
+}
+.caja-tabla-productos .der{
+    width: 320px;
+    display: flex;
+    justify-content: flex-end;
+}
+.caja-tabla-productos .izq{
+    width: 470px;
+    display: flex;
+    justify-content: flex-start;
+}
+.caja-tabla-productos .izq th{
+    margin: 13px 0px 0px 10px;
+    padding: 0px 20px 0px 20px;
+}
+.caja-tabla-productos .der th{
+    margin: 13px 15px 0px 0px;
+    padding: 0px 20px 0px 20px;
+}
+.caja-productos-add tr td{
+    width: 50px;
+}
+/*------*/
+#total{
+    width: 450px;
+    height: 100px;
+    background: rgb(240, 84, 84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+.small{
+    width: 180px;
+    height: 90px;
+    margin: 0px 20px 0px 20px;
+}
+.large{
+    width: 402px;
+    height: 90px;
+    margin: 0px 10px 0px;
+}
+.distinto{
+    width: 402px;
+    height: 100px;
+    border-top: black solid 1px;
+    margin: 0px 10px 0px;
+    padding-top: 10px;
+
+}
+/*selects y otros*/
+#documento p{
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+}
+#select-documento{
+    width: 180px;
+    height: 35px;
+    padding: 8px 0px 8px 8px;
+}
+
+#tipopago p{
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+}
+#select-tipopago{
+    width: 180px;
+    height: 35px;
+    padding: 8px 0px 8px 8px;
+}
+#serie p{
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+}
+#caja-serie{
+    width: 170px;
+    height: 35px;
+    padding-left: 8px;
+}
+#ndeventa p{
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+}
+#caja-ndeventa{
+    width: 170px;
+    height: 35px;
+    padding-left: 8px;
+}
+#fdecompra p{
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+}
+#caja-fdecompra{
+    width: 390px;
+    height: 35px;
+    padding-left: 8px;
+}
+#proveedor p{
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;  
+}
+#caja-proveedor{
+    width: 390px;
+    height: 35px;
+    padding-left: 8px;
+}
